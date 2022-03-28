@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+# CodeExecute
 
-You can use the [editor on GitHub](https://github.com/michaelassaf/code-execute.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+CodeExecute is a discord bot that enables developer collaboration through discord messages. It will allow developers to interactively execute code through discord messages while sharing and previewing the output of the code execution.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+:point_right: You can add this bot to your server [here](https://discord.com/api/oauth2/authorize?client_id=955836104559460362&permissions=534723950656&scope=bot%20applications.commands)
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# How to use
+## Syntax
+- Basic code block execution syntax
+````
+run```[language]
+<your code>
+```
+````
+- The bot also supports messages with text before and after your code block.
+````java
+Hello! Can anyone help me with this code
+run```go
+package main
+import "fmt"
+func main() {
+  fmt.Printf("Hello world")
+}
+```
+Thanks in advance!
+````
+- Execute a github gist
+```
+run https://gist.github.com/michaelassaf/29a8eb718842c1cb91718e91b53fe200
+```
+- Execute a file attached to your message
+```
+run file
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+The discord bot will return a reply message with the output of the code and with a *Run* button that allows the user to execute their code as many times as they wish. This gives the user the possibility to modify their code and re-execute their code.
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/michaelassaf/code-execute.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+![Alt Text](https://media.giphy.com/media/v5kxUwov8ajcKqeNee/giphy.gif)
