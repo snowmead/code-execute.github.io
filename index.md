@@ -6,12 +6,14 @@ CodeExecute is a discord bot that enables developer collaboration through discor
 
 # How to use
 ## Syntax
+
 - Basic code block execution syntax
-````
+````markdown
 run```[language]
 <your code>
 ```
 ````
+
 - The bot also supports messages with text before and after your code block.
 ````java
 Hello! Can anyone help me with this code
